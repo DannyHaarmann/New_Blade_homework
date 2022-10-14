@@ -7,9 +7,32 @@ public class Driver
     //String key = "jane";
     //System.out.println(Unique_String.scanWord(key));
     //System.out.println(Test_Code.OccurCount(kk,Bob));
-    //System.out.println(Conversion_rate.convert());
+    System.out.println(Conversion_rate.convert());
     //System.out.println(Conversion_rate.less_then_50());
     
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	/*
     	{
         Slow_Sort bubble = new Slow_Sort();
         int arr[] = { 64, 34, 25, 12, 22, 11, 90 };
@@ -38,6 +61,7 @@ public class Driver
     	        shellsort.Shellsort(arr);
     	        shellsort.printArray(arr);
     	    }
+    	    */
     }
 
 }
