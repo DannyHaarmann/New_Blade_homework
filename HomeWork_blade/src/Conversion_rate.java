@@ -13,6 +13,7 @@ public static long oldgroup = 7700000000L;
 public static long currentgroup = 7700000000L;
 public static int agecounter;
 public static int reproduction;
+public static long athiest; 
 	public static int convert()
 	{
 		while(disciples <= currentgroup)
@@ -21,11 +22,19 @@ public static int reproduction;
 			
 			
 			disciples = convert * disciples;
+			
+			
+			athiest = disciples / 3;
+			disciples = disciples - athiest;
+			
+			
 			count = count + 3;
 			agecounter = agecounter + 3;
 			reproduction = reproduction + 3;
-			System.out.println(count + " count");
 			
+			
+			System.out.println(count + " count");
+			System.out.println(athiest + "bad people");
 			
 			
 				if(reproduction == 30)
@@ -40,6 +49,7 @@ public static int reproduction;
 			if(agecounter >= lifespan)
 			{
 				System.out.println(disciples);
+				athiest = athiest - currentgroup;
 				currentgroup = currentgroup - oldgroup;
 				System.out.println("first dead now new pop " + startingpeople);
 				System.out.println(disciples + " d");
@@ -47,6 +57,7 @@ public static int reproduction;
 				System.out.println(currentgroup + " cg");
 				agecounter = 0;
 			}
+			
 
 		}
 		
