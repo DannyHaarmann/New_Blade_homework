@@ -1,3 +1,9 @@
+import java.util.Arrays;
+import java.util.Random;
+import java.lang.Math;
+import java.io.*;
+import java.util.*;
+
 public class Driver 
 {
     public static void main(String[] args)
@@ -7,7 +13,7 @@ public class Driver
     //String key = "jane";
     //System.out.println(Unique_String.scanWord(key));
     //System.out.println(Test_Code.OccurCount(kk,Bob));
-    System.out.println(Conversion_rate.convert());
+    //System.out.println(Conversion_rate.convert());
     //System.out.println(Conversion_rate.less_then_50());
     
     	
@@ -16,19 +22,32 @@ public class Driver
     	
     	
     	
+    double[] arr1 = getArray(10000);
+    long b = System.currentTimeMillis();
+    long startTime = System.currentTimeMillis();
+    long endTime = System.currentTimeMillis();
+    long executionTime = endTime - startTime;
+    	
+    startTime = System.currentTimeMillis();
+    (new Merge_sort()).mergeSort(arr1);
+    endTime = System.currentTimeMillis();
+    executionTime = endTime - startTime;
+    System.out.printf(" The time taken is = "+ "%12s%2s\n", executionTime, " ms");
+    
     	
     	
     	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
+    }
+    
+    public static double[] getArray(int n)
+    {
+        double[] arr = new double[n];
+        for(int i=0; i<n; i++)
+        {
+            arr[i] = ((double)(Math.random()*1000));
+        }
+        return arr;
+    }
     	
     	
     	
@@ -64,4 +83,3 @@ public class Driver
     	    */
     }
 
-}
