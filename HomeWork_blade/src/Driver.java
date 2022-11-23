@@ -8,6 +8,21 @@ public class Driver
 {
     public static void main(String[] args)
     {
+   	
+	        StackMin s = new StackMin();
+	       
+	          
+	        s.push(3);
+	        s.push(5);
+	        s.getMin();
+	        s.push(2);
+	        s.push(1);
+	        s.getMin();
+	        s.pop();
+	        s.getMin();
+	        s.pop();
+	    }
+    /*
         //String kk = "In the beginning God created the heavens and the earth.";
         //String Bob = "the";
     //String key = "jane";
